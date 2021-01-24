@@ -1,0 +1,20 @@
+$breakpoint-tablet-min: 768px;
+$breakpoint-tablet-max: 767px;
+
+/*** HEADER ***/
+
+@media (max-width: $breakpoint-tablet-max) {
+
+	header {
+		.info {
+			padding-right: 0;
+		}
+	}
+}
+
+@media (min-width: $breakpoint-tablet-min) {
+
+	.wpcf7 form {
+		width: 50%;
+	}
+}

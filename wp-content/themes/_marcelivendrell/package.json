@@ -1,0 +1,55 @@
+{
+    "title": "Bare",
+    "name": "startbootstrap-bare",
+    "version": "4.2.3",
+    "scripts": {
+        "start": "node_modules/.bin/gulp watch"
+    },
+    "description": "A basic HTML starter template for Bootstrap",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/template-overviews/bare",
+    "bugs": {
+        "url": "https://github.com/StartBootstrap/startbootstrap-bare/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (https://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/StartBootstrap/startbootstrap-bare.git"
+    },
+    "dependencies": {
+        "animate.css": "^4.1.1",
+        "bootstrap": "4.5.3",
+        "jquery": "3.5.1",
+        "slick-slider": "^1.8.2"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.6.1",
+        "browser-sync": "^2.26.13",
+        "cssnano": "^4.1.10",
+        "del": "^5.0.0",
+        "gulp": "^4.0.2",
+        "gulp-cache": "^1.1.2",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^6.0.0",
+        "gulp-newer": "^1.4.0",
+        "gulp-postcss": "^8.0.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify": "^3.0.2",
+        "gulp-wp-pot": "^2.5.0",
+        "merge-stream": "^2.0.0"
+    }
+}

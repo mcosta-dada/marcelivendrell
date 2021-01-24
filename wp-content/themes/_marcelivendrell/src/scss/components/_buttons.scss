@@ -1,0 +1,16 @@
+.btn-fabre-tall {
+	background-color: $taronja;
+	color: $blanc;
+	border-radius: 0;
+	padding: 10px 30px;
+
+	&.btn-dark {
+		background-color: $negre;
+
+		&:hover {
+			background-color: $blanc;
+			color: $negre;
+			border-color: $negre;
+		}
+	}
+}

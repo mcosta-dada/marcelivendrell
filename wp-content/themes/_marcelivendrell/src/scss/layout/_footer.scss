@@ -1,0 +1,31 @@
+footer {
+	color: $blanc;
+
+	&.container-fluid {
+		background-color: $gris;
+	}
+
+	.logo {
+		max-height: 64px;
+	}
+
+	p {
+		font-size: $font-normal;
+		color: $negre;
+		margin-bottom: 0;
+		line-height: 1.5em;
+	}
+
+	hr {
+		border-color: $gris-fosc;
+	}
+
+	a {
+		color: $negre;
+
+		&:hover {
+			color: $negre;
+			//text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+.soluciones {
+	header .site-part .vertical-line {
+	    background: $soluciones-color !important;
+	}
+
+	.btn-fabre-tall {
+		background: $soluciones-color !important;
+
+		&:hover {
+			background-color: $blanc !important;
+			color: $soluciones-color !important;;
+		}
+	}
+
+	.b-taronja {
+		background-color: $soluciones-color !important;
+	}
+
+	.text-taronja {
+		color: $soluciones-color !important;
+	}
+
+	#landings #pre-footer .funcion:before {
+		color: $soluciones-color !important;
+	}
+}

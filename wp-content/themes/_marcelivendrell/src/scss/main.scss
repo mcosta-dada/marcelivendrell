@@ -1,0 +1,23 @@
+@import 'variables/fonts';
+@import 'variables/variables';
+@import 'variables/functions';
+@import 'variables/mixins';
+@import 'variables/placeholders';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/slider';
+@import 'components/media';
+
+@import 'pages/home';
+@import 'pages/post-types/landings';
+@import 'pages/post-types/landings-soluciones';
+@import 'medias/base';

@@ -1,0 +1,50 @@
+.wpcf7 {
+
+	form {
+		text-align: center;
+		margin: auto;
+
+		.wpcf7-not-valid-tip {
+		    text-align: left;
+		}
+
+		input, textarea {
+
+			&:not(.wpcf7-submit) {
+				width: 100%;
+				margin-right: 20px;
+				padding: 25px;
+				border-radius: 0;
+				background-color: #E6E6E6;
+				border: none;
+			}
+
+			&.form-control {
+				&:focus {
+					box-shadow: 0 0 0 0.2rem rgba(255,92,0,.25);
+				}
+			}
+
+			&.form-control[type="checkbox"] {
+				&:focus {
+					box-shadow: none;
+				}
+			}
+
+			&.wpcf7-submit {
+				padding: 10px 75px;
+			}
+
+
+			&::placeholder {
+				color: $negre;
+				opacity: 1; 
+			}
+		}
+
+		a {
+			color: $negre;
+			text-decoration: underline;
+		}
+	}
+}

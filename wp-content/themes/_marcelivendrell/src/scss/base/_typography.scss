@@ -1,0 +1,30 @@
+body {
+  font-family: $tipografia-general;
+}
+
+h1, h2 {
+  font-family: $tipografia-alternativa;
+}
+
+h1 {
+	font-size: $font-big;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: $font-big-up;
+	font-weight: 200;
+}
+
+p {
+  font-weight: $normal-weight;
+  font-size: $font-normal;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: $bold-weight;
+}

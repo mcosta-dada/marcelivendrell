@@ -1,0 +1,43 @@
+.b-dark {
+	background-color: $negre !important;
+}
+
+.b-taronja {
+	background-color: $taronja !important;	
+}
+
+.text-taronja {
+	color: $taronja;	
+}
+
+.font-weight-light {
+	font-weight: 300;
+}
+
+.font-weight-medium {
+	font-weight: 600;
+}
+
+.animate-height {
+	transition: height 1s ease;
+}
+
+.close {
+	height: 0;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+#content {
+	padding: 150px 0;
+}
+
+.single-landings {
+	#content {
+		padding: 0;
+	}
+}
