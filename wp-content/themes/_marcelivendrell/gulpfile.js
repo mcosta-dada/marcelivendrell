@@ -31,6 +31,7 @@ paths = {
       bootstrap: src+'vendor/bootstrap',
       slick: src+'vendor/slick',
       animate: src+'vendor/animate',
+      wow: src+'vendor/wow',
     }
   },
   dest: {
@@ -103,6 +104,7 @@ function js() {
     paths.src.vendor.jquery +'/jquery.js',
     paths.src.vendor.bootstrap +'/js/bootstrap.bundle.js',
     paths.src.vendor.slick +'/slick.js',
+    paths.src.vendor.wow +'/wow.js',
     paths.src.js
     ])
   //.pipe(ugly())
@@ -163,11 +165,15 @@ function modules() {
   var animate = gulp.src('./node_modules/animate.css/**/*')
   .pipe(gulp.dest(paths.src.vendor.animate));
 
+  //WOW
+  var wow = gulp.src('./node_modules/wowjs/dist/**/*')
+  .pipe(gulp.dest(paths.src.vendor.wow));
+
   //Fonts
   var fonts = gulp.src(paths.src.fonts)
   .pipe(gulp.dest(paths.dest.css+ '/fonts'));
 
-  return merge(bootstrap, jquery, slick, fonts);
+  return merge(bootstrap, jquery, slick, animate, wow, fonts);
 }
 
 // clear the room
@@ -203,7 +209,7 @@ exports.img = img;
 gulp.task('default', gulp.series(gulp.parallel(style, js, php, img, lang ), watch));      
 
 // all done let's build
-var build = gulp.series(modules, gulp.parallel(style, js, php, img, lang ));
+var build = gulp.series(modules);
 var clean = gulp.series(clean, build);
 //var build = gulp.series(clean, gulp.parallel(modules));
 var vendor = gulp.series(clean, modules);
