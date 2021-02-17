@@ -173,7 +173,7 @@ function modules() {
   var fonts = gulp.src(paths.src.fonts)
   .pipe(gulp.dest(paths.dest.css+ '/fonts'));
 
-  return merge(bootstrap, jquery, slick, fonts);
+  return merge(bootstrap, jquery, slick, animate, wow, fonts);
 }
 
 // clear the room
@@ -209,7 +209,7 @@ exports.img = img;
 gulp.task('default', gulp.series(gulp.parallel(style, js, php, img, lang ), watch));      
 
 // all done let's build
-var build = gulp.series(modules, gulp.parallel(style, js, php, img, lang ));
+var build = gulp.series(modules);
 var clean = gulp.series(clean, build);
 //var build = gulp.series(clean, gulp.parallel(modules));
 var vendor = gulp.series(clean, modules);
