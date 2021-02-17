@@ -2,8 +2,7 @@
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer container-fluid">
 		<div class="container">
-			<?php get_template_part( 'template-parts/footer/footer' ); ?>
-			<hr/>
+			<?php //get_template_part( 'template-parts/footer/footer' ); ?>
 			<?php get_template_part( 'template-parts/footer/footer', 'bottom' ); ?>
 		</div>
 	</footer><!-- #colophon -->

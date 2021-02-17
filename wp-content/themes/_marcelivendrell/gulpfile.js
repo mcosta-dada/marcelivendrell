@@ -31,6 +31,7 @@ paths = {
       bootstrap: src+'vendor/bootstrap',
       slick: src+'vendor/slick',
       animate: src+'vendor/animate',
+      wow: src+'vendor/wow',
     }
   },
   dest: {
@@ -103,6 +104,7 @@ function js() {
     paths.src.vendor.jquery +'/jquery.js',
     paths.src.vendor.bootstrap +'/js/bootstrap.bundle.js',
     paths.src.vendor.slick +'/slick.js',
+    paths.src.vendor.wow +'/wow.js',
     paths.src.js
     ])
   //.pipe(ugly())
@@ -162,6 +164,10 @@ function modules() {
   //Animate
   var animate = gulp.src('./node_modules/animate.css/**/*')
   .pipe(gulp.dest(paths.src.vendor.animate));
+
+  //WOWjs
+  var wow = gulp.src('./node_modules/wowjs/dist/**/*')
+  .pipe(gulp.dest(paths.src.vendor.wow));
 
   //Fonts
   var fonts = gulp.src(paths.src.fonts)

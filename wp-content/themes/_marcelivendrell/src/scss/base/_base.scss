@@ -33,11 +33,20 @@
 }
 
 #content {
-	padding: 150px 0;
+	/*padding: 20px 0;*/
 }
 
 .single-landings {
 	#content {
 		padding: 0;
 	}
+}
+
+.dark-bg {
+	background-color: $gris-clar;
+	color: $blanc; 
+} 
+
+section {
+	padding-top: 50px;
 }
