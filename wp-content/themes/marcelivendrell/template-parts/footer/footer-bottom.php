@@ -1,5 +1,5 @@
 <div class="row py-5">
 	<div class="col-12 text-center">
-		<p><?= __('FabréTall - Soluciones y Proyectos para la industria alimentaria  @ 2021. All rights registered.', 'dada'); ?></p>
+		<p><?= __('Marcelí Vendrell © 2021 ', 'mp'); ?></p>
 	</div>
 </div>
