@@ -5,37 +5,9 @@ get_header();
 <div id="home" class="content-area">
 	<main id="main" class="site-main">
 
-<<<<<<< HEAD
 		<div class="container">
 			<?= the_content(); ?>
 		</div>
-=======
-  	<div class="container">
-	  	<?php /*<h1><?= the_title(); ?></h1>
-	  	<?php // the_content(); */?>
-
-	  	<section id="cotxes">
-	  		<h1>cotxes</h1>
-	  	</section>
-
-	  	<section id="motos">
-	  		<h1>motos</h1>
-	  	</section>
-
-	  	<section id="bicicletes">
-	  		<h1>bicicletes</h1>
-	  	</section>
-
-	  	<section id="industria">
-	  		<h1>industria</h1>
-	  	</section>
-
-	  	<section id="contacte">
-	  		<h1>contacte</h1>
-	  	</section>
-
-	  </div>
->>>>>>> 875a3b43b4998201d5285ce92c2a7b30b0dced48
 
 		<section id="cotxes" class="container-fluid">
 			<div class="container">
@@ -54,7 +26,7 @@ get_header();
 
 							?>
 
-							<div class="col-md-4 px-md-5 text-justify">
+							<div class="col-md-4 px-md-5">
 								<div class="wow animate__animated animate__fadeIn" data-wow-delay="<?= $i ?>s">
 									<div class="text-center">
 										<img class="pictograma img-fluid" src="<?= get_sub_field('icona')['url'] ?>">
@@ -88,12 +60,11 @@ get_header();
 				<div class="row mt-4">
 					<div class="col-md-4 px-md-5 text-center d-flex justify-content-center align-items-center">
 
-						<div class="text-center wow animate__animated animate__fadeIn" data-wow-delay="1s">
-							<img class="pictograma img-fluid" src="<?= get_field('icona_moto')['url'] ?>">
-						</div>
+						<img class="pictograma img-fluid wow animate__animated animate__fadeIn" data-wow-delay="1s" src="<?= get_field('icona_moto')['url'] ?>">
+
 					</div>
 
-					<div class="col-md-8 px-md-5 text-justify d-flex justify-content-center flex-column wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
+					<div class="col-md-8 px-md-5 d-flex justify-content-center flex-column wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
 						<?= get_field('text_moto'); ?>
 					</div>
 					<?php
@@ -113,74 +84,95 @@ get_header();
 			</div>
 		</section>
 
-		<section id="bicicletes" class="container-fluid">
+		<div id="bicicletes-industria" class="container-fluid">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 text-center">
-						<h1 class="wow animate__animated animate__fadeIn mb-5" data-wow-delay=".5s"><?= get_field('titol_bicicleta'); ?></h1>
-					</div>
-				</div>
-				<div class="row mt-4 <?= !have_rows('logos_bicicleta') ? 'mb-5 pb-5' : '' ?>">
-					<div class="col-md-4 px-md-5 text-center d-flex justify-content-center align-items-center wow animate__animated animate__fadeIn" data-wow-delay="1s">
+					<section id="bicicletes" class="col-md-6">
 
-						<div class="text-center">
-							<img class="pictograma img-fluid" src="<?= get_field('icona_bicicleta')['url'] ?>">
-						</div>
-					</div>
+						
+						<h1 class="text-center wow animate__animated animate__fadeIn mb-5" data-wow-delay=".5s"><?= get_field('titol_bicicleta'); ?></h1>
 
-					<div class="col-md-8 px-md-5 text-justify d-flex justify-content-center flex-column  wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
-						<?= get_field('text_bicicleta'); ?>
-					</div>
-					<?php
-					if( have_rows('logos_bicicleta') ):
-						while( have_rows('logos_bicicleta') ) : the_row();
+						<div class="mt-4 row <?= !have_rows('logos_bicicleta') ? 'mb-5 pb-5' : '' ?>">
+							<div class="w-100 pb-md-5 d-flex justify-content-center align-items-center wow animate__animated animate__fadeIn" data-wow-delay="1s">
 
-							if (get_sub_field('logo')) { ?>
-								<div class="col-md-3 px-md-5 text-center my-5 mt-4 wow animate__animated animate__fadeIn" data-wow-delay="2s">
-									<img class="pictograma-logo img-fluid" src="<?= get_sub_field('logo')['url'] ?>">
+								<img class="pictograma img-fluid wow animate__animated animate__fadeIn" data-wow-delay="1s" src="<?= get_field('icona_bicicleta')['url'] ?>">
+
+							</div>
+
+							<div class="px-md-5 d-flex justify-content-center flex-column  wow animate__animated animate__fadeIn px-5" data-wow-delay="1.5s">
+								<?= get_field('text_bicicleta'); ?>
+							</div>
+							<?php
+							if( have_rows('logos_bicicleta') ):
+								?>
+								<div class="d-flex justify-content-center w-100">
+									<?php
+									$i = 2;
+									while( have_rows('logos_bicicleta') ) : the_row();
+
+										if (get_sub_field('logo')) { ?>
+											<div class="px-md-5 text-center my-5 mt-4 wow animate__animated animate__fadeIn" data-wow-delay="<?= $i ?>s">
+												<img class="pictograma-logo img-fluid" src="<?= get_sub_field('logo')['url'] ?>">
+											</div>
+										<?php } 
+										$i = $i + .5;
+									endwhile;
+									?>
 								</div>
-							<?php } 
+								<?php
+							endif;?>
+						</div>
+					</section>
 
-						endwhile;
-					endif;?>
+					<section id="industria" class="col-md-6">
+
+						<h1 class="text-center wow animate__animated animate__fadeIn mb-5" data-wow-delay=".5s"><?= get_field('titol_industria'); ?></h1>
+
+						<div class="mt-4 row <?= !have_rows('logos_industria') ? 'mb-5 pb-5' : '' ?>">
+							<div class="w-100 pb-md-5 d-flex justify-content-center align-items-center wow animate__animated animate__fadeIn" data-wow-delay="1s">
+
+								<img class="pictograma img-fluid wow animate__animated animate__fadeIn" data-wow-delay="1s" src="<?= get_field('icona_industria')['url'] ?>">
+
+							</div>
+
+							<div class="px-md-5 d-flex justify-content-center flex-column  wow animate__animated animate__fadeIn px-5" data-wow-delay="1.5s">
+								<?= get_field('text_industria'); ?>
+							</div>
+							<?php
+							if( have_rows('logos_recanvis') ):
+								?>
+								<div class="d-flex justify-content-center w-100">
+									<?php
+									$i = 2;
+									while( have_rows('logos_recanvis') ) : the_row();
+
+										if (get_sub_field('logo')) { ?>
+											<div class="px-md-5 text-center my-5 mt-4 wow animate__animated animate__fadeIn" data-wow-delay="<?= $i ?>s">
+												<img class="pictograma-logo img-fluid" src="<?= get_sub_field('logo')['url'] ?>">
+											</div>
+										<?php } 
+										$i = $i + .5;
+									endwhile;
+									?>
+								</div>
+								<?php
+							endif;?>
+						</div>
+					</section>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<section id="industria" class="dark-bg container-fluid">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h1 class="wow animate__animated animate__fadeIn mb-5" data-wow-delay=".5s"><?= get_field('titol_industria'); ?></h1>
-					</div>
-				</div>
-				<div class="row mt-4 pb-5">
-					<div class="col-md-4 px-md-5 text-center d-flex justify-content-center align-items-center">
+		
+		<section id="contacte" class="container-fluid dark-bg">
 
-						<div class="text-center wow animate__animated animate__fadeIn" data-wow-delay="1s">
-							<img class="pictograma img-fluid" src="<?= get_field('icona_industria')['url'] ?>">
-						</div>
-					</div>
+			<h1 class="text-center wow animate__animated animate__fadeIn mb-5" data-wow-delay=".5s">CONTACTE</h1>
 
-					<div class="col-md-8 px-md-5 text-justify d-flex justify-content-center flex-column wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
-						<?= get_field('text_industria'); ?>
-					</div>
-					<?php
-					if( have_rows('logos_industria') ):
-						while( have_rows('logos_industria') ) : the_row();
+			<div class="col-md-6">
 
-							if (get_sub_field('logo')) { ?>
-								<div class="col-md-3 px-md-5 text-center my-5 mt-4 wow animate__animated animate__fadeIn" data-wow-delay="2s">
-									<img class="pictograma-logo img-fluid" src="<?= get_sub_field('logo')['url'] ?>">
-								</div>
-							<?php } 
 
-						endwhile;
-					endif;?>
-				</div>
 			</div>
 		</section>
-
 
 	</main><!-- .site-main -->
 </div><!-- .content-area -->
