@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	//$(document).not('#home').find('nav').addClass('in');
+
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
 		var currentScrollPos = window.pageYOffset;

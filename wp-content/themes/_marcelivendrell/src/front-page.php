@@ -60,7 +60,7 @@ get_header();
 				<div class="row mt-4">
 					<div class="col-md-4 px-md-5 text-center d-flex justify-content-center align-items-center">
 
-						<img class="pictograma img-fluid wow animate__animated animate__fadeIn" data-wow-delay="1s" src="<?= get_field('icona_moto')['url'] ?>">
+						<img class="pictograma img-fluid wow animate__animated animate__fadeIn mb-5" data-wow-delay="1s" src="<?= get_field('icona_moto')['url'] ?>">
 
 					</div>
 
@@ -95,7 +95,7 @@ get_header();
 						<div class="mt-4 row <?= !have_rows('logos_bicicleta') ? 'mb-5 pb-5' : '' ?>">
 							<div class="w-100 pb-md-5 d-flex justify-content-center align-items-center wow animate__animated animate__fadeIn" data-wow-delay="1s">
 
-								<img class="pictograma img-fluid wow animate__animated animate__fadeIn" data-wow-delay="1s" src="<?= get_field('icona_bicicleta')['url'] ?>">
+								<img class="pictograma img-fluid wow animate__animated animate__fadeIn mb-5" data-wow-delay="1s" src="<?= get_field('icona_bicicleta')['url'] ?>">
 
 							</div>
 
@@ -131,7 +131,7 @@ get_header();
 						<div class="mt-4 row <?= !have_rows('logos_industria') ? 'mb-5 pb-5' : '' ?>">
 							<div class="w-100 pb-md-5 d-flex justify-content-center align-items-center wow animate__animated animate__fadeIn" data-wow-delay="1s">
 
-								<img class="pictograma img-fluid wow animate__animated animate__fadeIn" data-wow-delay="1s" src="<?= get_field('icona_industria')['url'] ?>">
+								<img class="pictograma img-fluid wow animate__animated animate__fadeIn mb-5" data-wow-delay="1s" src="<?= get_field('icona_industria')['url'] ?>">
 
 							</div>
 
@@ -141,7 +141,7 @@ get_header();
 							<?php
 							if( have_rows('logos_recanvis') ):
 								?>
-								<div class="d-flex justify-content-center w-100">
+								<div class="d-block d-md-flex justify-content-center w-100">
 									<?php
 									$i = 2;
 									while( have_rows('logos_recanvis') ) : the_row();
@@ -164,13 +164,19 @@ get_header();
 		</div>
 
 		
-		<section id="contacte" class="container-fluid dark-bg">
+		<section id="contacte" class="container-fluid dark-bg pb-5">
 
-			<h1 class="text-center wow animate__animated animate__fadeIn mb-5" data-wow-delay=".5s">CONTACTE</h1>
+			<h1 class="text-center wow animate__animated animate__fadeIn mb-5" data-wow-delay=".5s"><?= get_field('titol_contacte'); ?></h1>
 
-			<div class="col-md-6">
-
-
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 info pt-4">
+						<?= get_field('dades_contacte'); ?>
+					</div>
+					<div class="col-md-6">
+						<?= do_shortcode(get_field('formulari')); ?>
+					</div>
+				</div>
 			</div>
 		</section>
 

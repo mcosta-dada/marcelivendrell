@@ -21458,6 +21458,8 @@ return jQuery;
 new WOW().init();
 $(document).ready(function(){
 
+	//$(document).not('#home').find('nav').addClass('in');
+
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
 		var currentScrollPos = window.pageYOffset;
@@ -21746,7 +21748,7 @@ $(document).ready(function(){
 	/****** HOME ******/
 
 	  $('.primary-slick').slick({
-	    autoplay: false,
+	    autoplay: true,
 		dots: true,
 		arrows: true,
 		autoplaySpeed: 5000,

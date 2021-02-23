@@ -3,7 +3,7 @@ $(document).ready(function(){
 	/****** HOME ******/
 
 	  $('.primary-slick').slick({
-	    autoplay: false,
+	    autoplay: true,
 		dots: true,
 		arrows: true,
 		autoplaySpeed: 5000,
