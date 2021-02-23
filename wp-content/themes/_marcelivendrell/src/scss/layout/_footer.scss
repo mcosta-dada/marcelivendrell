@@ -1,9 +1,8 @@
 footer {
-	color: $blanc;
 
-	&.container-fluid {
-		background-color: $gris;
-	}
+	background-color: #383838;
+
+	
 
 	.logo {
 		max-height: 64px;
@@ -11,7 +10,7 @@ footer {
 
 	p {
 		font-size: $font-normal;
-		color: $negre;
+		color: $blanc;
 		margin-bottom: 0;
 		line-height: 1.5em;
 	}
@@ -21,10 +20,10 @@ footer {
 	}
 
 	a {
-		color: $negre;
+		color: $blanc;
 
 		&:hover {
-			color: $negre;
+			color: $blanc;
 			//text-decoration: none;
 		}
 	}

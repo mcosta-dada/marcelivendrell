@@ -5,16 +5,18 @@ $breakpoint-tablet-max: 767px;
 
 @media (max-width: $breakpoint-tablet-max) {
 
-	header {
-		.info {
-			padding-right: 0;
-		}
-	}
 }
 
 @media (min-width: $breakpoint-tablet-min) {
 
-	.wpcf7 form {
+	/*.wpcf7 form {
 		width: 50%;
+		}*/
+}
+
+@media screen and (max-width: 575px) {
+
+	.slick-arrow {
+		display: none;
 	}
 }

@@ -35,7 +35,7 @@
 								<div class="content-slide text-center mt-5 px-5">
 									<!--img class="logo-slide img-fluid animate__animated animate__fadeInLeft animate__delay-1s"  data-animation="animated flash" src="<?= get_sub_field('imatge') ?>" /-->
 									<img class="logo-slide img-fluid"  src="<?= get_sub_field('imatge') ?>" />
-									<h1 class="text-slide text-white my-5" ><?= the_sub_field('text') ?></h1>
+									<h2 class="text-slide text-white my-5" ><?= the_sub_field('text') ?></h2>
 								</div>
 							</div>
 

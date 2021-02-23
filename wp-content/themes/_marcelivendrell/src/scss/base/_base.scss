@@ -34,8 +34,8 @@ html {
 
 .close {
 	height: 0;
-    overflow: hidden;
-    padding: 0 !important;
+	overflow: hidden;
+	padding: 0 !important;
 }
 
 .overflow-hidden {
@@ -58,5 +58,13 @@ html {
 } 
 
 section {
-	padding-top: 50px;
+	padding-top: 60px;
+}
+
+#contacte {
+	.info {
+		p {
+			font-size: 1.5rem;
+		}
+	}
 }

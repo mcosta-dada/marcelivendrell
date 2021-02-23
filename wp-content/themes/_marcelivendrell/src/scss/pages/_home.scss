@@ -1,12 +1,29 @@
 #home {
 	.pictograma {
-	    max-width: 250px;
-    	max-height: 150px;
+		max-width: 100px;
+		max-height: 100px;
 	}
 
 	.pictograma-logo {
-		max-width: 100px;
-		margin-top: 20px;
+		max-height: 75px;
+		margin: 20px auto;
 	} 
 
+	#motos {
+		.pictograma {
+			max-width: 250px;
+			max-height: 250px;
+		}
+
+		.pictograma-logo {
+
+		}
+	}
+
+	#bicicletes {
+		.pictograma {
+			max-width: 200px;
+			max-height: 200px;
+		}
+	}  
 }

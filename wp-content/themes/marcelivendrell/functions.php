@@ -57,3 +57,27 @@ function add_file_types_to_uploads($file_types){
 add_filter('upload_mimes', 'add_file_types_to_uploads');
 
 add_theme_support( 'post-thumbnails' );
+
+
+function change_menu($items){
+
+global $post;
+
+if(!is_front_page()){
+
+  foreach($items as $item){
+
+
+  	if ($post->post_name != strtolower($item->title))
+    	$item->url = $post_name . get_bloginfo("url") . "/" .  $item->url;
+
+
+  }
+
+}
+
+  return $items;
+
+}
+
+add_filter('wp_nav_menu_objects', 'change_menu');
