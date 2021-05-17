@@ -53,10 +53,53 @@ html {
 }
 
 .dark-bg {
-	background-color: $gris-clar;
+	background-color: $gris-fosc;
 	color: $blanc; 
 } 
 
 section {
-	padding-top: 60px;
+	padding: 60px 15px;
 }
+
+section.super-width {
+	padding: 0px 15px;
+
+	h1 {
+		padding-top: 60px;
+	}
+}
+
+.full-width {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+}
+
+ul {
+    list-style-type: disclosure-closed;
+    padding-left: 0;
+    padding-right: 50px;
+    list-style-position: inside;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+.remark {
+    height: 4px;
+    background: white;
+    width: 100px;
+}
+
+.bg-img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 50vh;
+} 
+/*
+input, textarea {
+	max-width: 300px;
+}*/

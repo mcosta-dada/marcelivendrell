@@ -4,16 +4,22 @@ body {
 
 h1, h2 {
   font-family: $tipografia-alternativa;
+  font-weight: 700;
 }
 
 h1 {
-	font-size: $font-big-up;
-	font-weight: bold;
+	font-size: $font-super-big;
+	font-weight: 800;
 }
 
 h2 {
-	font-size: $font-big;
-	font-weight: 200;
+	font-size: $font-big-up;
+}
+
+h3 {
+  font-size: $font-big;
+  font-style: italic;
+  color: $gris-clar;
 }
 
 p {

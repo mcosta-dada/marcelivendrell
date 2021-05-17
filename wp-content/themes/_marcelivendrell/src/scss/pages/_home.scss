@@ -1,5 +1,33 @@
 #home {
-	.pictograma {
+
+	.destacat {
+
+		p {
+			font-weight: 200;
+			font-style: italic;
+		}
+
+		.testimonial-slick {
+			p {
+				font-weight: bold;
+				text-align: center;
+			}
+
+			label {
+				display: block;
+			}
+		}
+	} 
+
+	.imatge-destacada-section {
+		height: 50vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+	} 
+
+	/*.pictograma {
 		max-width: 100px;
 		max-height: 100px;
 	}
@@ -7,31 +35,66 @@
 	.pictograma-logo {
 		max-height: 75px;
 		margin: 20px auto;
-	} 
+		} */
 
-	#motos {
-		.pictograma {
-			max-width: 250px;
-			max-height: 250px;
+		
+		.marques > .pictograma-logo {
+			/*padding-right: 80px;*/
+			max-width: 100px;
+			text-align: center;
+		}
+		.marques > .pictograma-logo:last-child {
+			padding-right: 0;
 		}
 
-		.pictograma-logo {
-
-		}
-	}
-
-	#bicicletes {
-		.pictograma {
-			max-width: 200px;
-			max-height: 200px;
-		}
-	} 
-
-	#contacte {
-		.info {
-			p {
-				font-size: 1.5rem;
+		.info-cotxes {
+			li {
+				margin-bottom: 20px;
 			}
 		}
-	} 
-}
+
+		#motos {
+			.pictograma {
+				max-width: 250px;
+				max-height: 250px;
+			}
+
+			.pictograma-logo {
+
+			}
+		}
+
+		#bicicletes {
+			.pictograma {
+				max-width: 200px;
+				max-height: 200px;
+			}
+		} 
+
+		#contacte {
+
+			form {
+				p, label {
+					margin-bottom: 0;
+				} 
+
+				.wpcf7-submit {
+					border: 2px solid;
+					&:hover {
+						border: 2px solid white !important;
+						color: white;
+						background: #333333 !important;
+					}
+				}
+			} 
+			.info {
+				p {
+					font-size: 1.5rem;
+				}
+			}
+		} 
+
+
+	}
+
+	

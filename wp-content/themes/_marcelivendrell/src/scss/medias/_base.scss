@@ -1,6 +1,7 @@
 $breakpoint-tablet-min: 768px;
 $breakpoint-tablet-max: 767px;
 
+
 /*** HEADER ***/
 
 @media (max-width: $breakpoint-tablet-max) {
@@ -13,6 +14,14 @@ $breakpoint-tablet-max: 767px;
 		width: 50%;
 		}*/
 }
+
+
+@media (max-width: 900px) {
+	input, textarea {
+	    max-width: 300px;
+	}
+}
+
 
 @media screen and (max-width: 575px) {
 

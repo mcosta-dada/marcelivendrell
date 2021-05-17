@@ -21747,8 +21747,8 @@ $(document).ready(function(){
 
 	/****** HOME ******/
 
-	  $('.primary-slick').slick({
-	    autoplay: true,
+	$('.primary-slick').slick({
+		autoplay: true,
 		dots: true,
 		arrows: true,
 		autoplaySpeed: 5000,
@@ -21757,27 +21757,35 @@ $(document).ready(function(){
 		infinite: true,
 		prevArrow:"<img class='a-left control-c prev slick-prev' src='/wp-content/uploads/2021/01/left-arrow.svg'>",
 		nextArrow:"<img class='a-right control-c next slick-next' src='/wp-content/uploads/2021/01/right-arrow.svg'>",
-	  });
+	});
 
-	  if ($('.slick-slide').hasClass('slick-active')) {
-	    $('.logo-slide').addClass('animate__animated animate__fadeInRight');
-	    $('.text-slide').addClass('animate__animated animate__fadeInRight animate__delay-1s');
-	  } else {
-	    $('.logo-slide').removeClass('animate__animated animate__fadeInRight');
-	    $('.text-slide').removeClass('animate__animated animate__fadeInRight animate__delay-1s');
-	  }
+	if ($('.slick-slide').hasClass('slick-active')) {
+		$('.logo-slide').addClass('animate__animated animate__fadeInRight');
+		$('.text-slide').addClass('animate__animated animate__fadeInRight animate__delay-1s');
+	} else {
+		$('.logo-slide').removeClass('animate__animated animate__fadeInRight');
+		$('.text-slide').removeClass('animate__animated animate__fadeInRight animate__delay-1s');
+	}
 
-	  $(".primary-slick").on("beforeChange", function() {
-	    
-	    $('.logo-slide').removeClass('animate__animated animate__fadeInRight').hide();
-	    $('.text-slide').removeClass('animate__animated animate__fadeInRight animate__delay-1s').hide();
-	    setTimeout(() => {    
-	      $('.logo-slide').addClass('animate__animated animate__fadeInRight').show();
-	      $('.text-slide').addClass('animate__animated animate__fadeInRight animate__delay-1s').show();
-	      
-	    }, 1000);
+	$(".primary-slick").on("beforeChange", function() {
+		
+		$('.logo-slide').removeClass('animate__animated animate__fadeInRight').hide();
+		$('.text-slide').removeClass('animate__animated animate__fadeInRight animate__delay-1s').hide();
+		setTimeout(() => {    
+			$('.logo-slide').addClass('animate__animated animate__fadeInRight').show();
+			$('.text-slide').addClass('animate__animated animate__fadeInRight animate__delay-1s').show();
+			
+		}, 1000);
 
-	  })
+	});
+
+	$('.testimonial-slick').slick({
+		autoplay: true,
+		dots: true,
+		arrows: false,
+		autoplaySpeed: 5000,
+		infinite: true,
+	});
 
 /*
 	$('.primary-slick').on('init', function(e, slick) {
@@ -21833,6 +21841,6 @@ $(document).ready(function(){
 
 
     });
-*/
+    */
 
 });
