@@ -43,6 +43,10 @@ header {
 
 		}
 
+		a.nav-item.nav-link.active, a[aria-current=page] {
+		    color: #666666;
+		}
+
 	}
 
 }	

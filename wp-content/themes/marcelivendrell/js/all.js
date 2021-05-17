@@ -21466,12 +21466,17 @@ $(document).ready(function(){
 		if (prevScrollpos > currentScrollPos) {
 			document.getElementsByClassName("navbar")[0].style.top = "0";
 		} else {
-			document.getElementsByClassName("navbar")[0].style.top = "-"+ $('.navbar').outerHeight() + "px";
+			//document.getElementsByClassName("navbar")[0].style.top = "-"+ $('.navbar').outerHeight() + "px";
 		}
 		prevScrollpos = currentScrollPos;
 	}
 	$(window ).scroll(function() {
 
+		/*var scrollDistance = $(window).scrollTop();
+
+		$('section').each(function(i) {
+			console.log($(this).scrollTop());
+		});*/
 
 		if($(this).scrollTop() > $('header').innerHeight() - 20) {
 			$('header').find('nav').addClass('in');
@@ -21497,6 +21502,31 @@ $(document).ready(function(){
 	});
 
 });
+
+
+ var addClassOnScroll = function () {
+            var windowTop = $(window).scrollTop();
+            $('div[header-anchor="1"], section[id]').each(function (index, elem) {
+                var offsetTop = $(elem).offset().top;
+                var outerHeight = $(this).outerHeight(true);
+
+                if( windowTop > (offsetTop - 50) && windowTop < ( offsetTop + outerHeight)) {
+                    var elemId = $(elem).attr('id');
+
+                    $("nav a.active").removeClass('active');
+
+                    $("nav a[href='#" + elemId + "']").addClass('active');
+                }
+            });
+        };
+
+        $(function () {
+            $(window).on('scroll', function () {
+                addClassOnScroll();
+            });
+        });
+
+
 LIB = {
     root: null,
     setRoot: function(root) {
@@ -21750,13 +21780,13 @@ $(document).ready(function(){
 	$('.primary-slick').slick({
 		autoplay: true,
 		dots: true,
-		arrows: true,
+		arrows: false,
 		autoplaySpeed: 5000,
 		rows: 0,
 		fade: true,
 		infinite: true,
-		prevArrow:"<img class='a-left control-c prev slick-prev' src='/wp-content/uploads/2021/01/left-arrow.svg'>",
-		nextArrow:"<img class='a-right control-c next slick-next' src='/wp-content/uploads/2021/01/right-arrow.svg'>",
+		/*prevArrow:"<img class='a-left control-c prev slick-prev' src='/wp-content/uploads/2021/01/left-arrow.svg'>",
+		nextArrow:"<img class='a-right control-c next slick-next' src='/wp-content/uploads/2021/01/right-arrow.svg'>",*/
 	});
 
 	if ($('.slick-slide').hasClass('slick-active')) {

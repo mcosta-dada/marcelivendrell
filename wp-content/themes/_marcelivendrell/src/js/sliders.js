@@ -5,13 +5,13 @@ $(document).ready(function(){
 	$('.primary-slick').slick({
 		autoplay: true,
 		dots: true,
-		arrows: true,
+		arrows: false,
 		autoplaySpeed: 5000,
 		rows: 0,
 		fade: true,
 		infinite: true,
-		prevArrow:"<img class='a-left control-c prev slick-prev' src='/wp-content/uploads/2021/01/left-arrow.svg'>",
-		nextArrow:"<img class='a-right control-c next slick-next' src='/wp-content/uploads/2021/01/right-arrow.svg'>",
+		/*prevArrow:"<img class='a-left control-c prev slick-prev' src='/wp-content/uploads/2021/01/left-arrow.svg'>",
+		nextArrow:"<img class='a-right control-c next slick-next' src='/wp-content/uploads/2021/01/right-arrow.svg'>",*/
 	});
 
 	if ($('.slick-slide').hasClass('slick-active')) {

@@ -34,8 +34,8 @@ html {
 
 .close {
 	height: 0;
-    overflow: hidden;
-    padding: 0 !important;
+	overflow: hidden;
+	padding: 0 !important;
 }
 
 .overflow-hidden {
@@ -80,7 +80,7 @@ ul {
     list-style-type: disclosure-closed;
     padding-left: 0;
     padding-right: 50px;
-    list-style-position: inside;
+    /*list-style-position: inside;*/
 }
 
 li {
@@ -103,3 +103,4 @@ li {
 input, textarea {
 	max-width: 300px;
 }*/
+
