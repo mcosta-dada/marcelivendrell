@@ -9,10 +9,17 @@
 		}
 
 		p {
+
+			text-align: right;
+
 			label {
 				text-align: left;
 			}
 		} 
+
+		.wpcf7-submit {
+			margin-right: 0 !important;
+		}
 
 		input, textarea {
 

@@ -14,6 +14,7 @@ get_header();
 				<div class="row">
 					<div class="col-md-8 offset-md-2 text-center">
 						<!--img class="pictograma img-fluid mb-3 wow animate__animated animate__fadeIn" src="<?= get_stylesheet_directory_uri() ?>/img/icons/circulo-plus.svg" width="30"-->
+						<h3 class="wow animate__animated animate__fadeIn" data-wow-delay=".5s"><?= get_field('titol_introduccio_1'); ?></h3>
 						<div class="wow animate__animated animate__fadeIn" data-wow-delay="1s"><?= get_field('introduccio_1'); ?></div>
 					</div>
 				</div>
@@ -191,10 +192,10 @@ get_header();
 						<h1 class="wow animate__animated animate__fadeIn mb-5" data-wow-delay=".5s"><?= get_field('titol_contacte'); ?></h1>
 					</div>
 
-					<div class="col-md-6 info pt-4 wow animate__animated animate__fadeIn" data-wow-delay="1s">
+					<div class="col-md-5 info pt-4 wow animate__animated animate__fadeIn" data-wow-delay="1s">
 						<?= get_field('dades_contacte'); ?>
 					</div>
-					<div class="col-md-6 wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
+					<div class="col-md-7 wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
 						<?= do_shortcode(get_field('formulari')); ?>
 					</div>
 				</div>

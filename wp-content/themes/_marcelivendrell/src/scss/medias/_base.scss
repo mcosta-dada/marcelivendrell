@@ -20,6 +20,20 @@ $breakpoint-tablet-max: 767px;
 	input, textarea {
 	    max-width: 300px;
 	}
+
+	.wpcf7 {
+
+		form {
+
+			p {
+				text-align: center;
+			} 
+
+			.wpcf7-submit {
+				margin-right: auto !important;
+			}
+		}
+	}
 }
 
 
@@ -27,5 +41,45 @@ $breakpoint-tablet-max: 767px;
 
 	.slick-arrow {
 		display: none;
+	}
+}
+
+@media (max-width: 991px) {
+	a.mini-logo {
+	    position: absolute;
+	    top: 7px;
+	    right: 25px;
+	}
+
+	header .navbar .mini-logo-inside {
+	    display: none;
+	}
+
+	.navbar {
+		.collapse {
+			padding: 20px 0 !important;
+		}
+	}
+
+
+	header .navbar {
+	    background: rgba(51,51,51,.9);
+	}
+
+	.logo-slide-fixed {
+	    padding-bottom: 150px;
+	}
+
+}
+
+@media (min-width: 992px) {
+	header .navbar .mini-logo {
+	    display: none;
+	}
+
+	.navbar {
+		&.in .collapse {
+		    padding: 0!important;
+		}
 	}
 }

@@ -35,9 +35,9 @@ get_header();
 
 						?>
 
-						<div class="col-md-4 d-flex flex-column producte text-center wow animate__animated animate__fadeIn" data-wow-delay="<?= $i ?>s">
-							<div class="oferta-img" style="background-image: url(<?= wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "large" )[0]; ?>)" ></div>
-							<h1><?= get_the_title() ?></h1>
+						<div class="col-md-4 d-flex flex-column producte text-center wow animate__animated animate__fadeIn mb-5" data-wow-delay="<?= $i ?>s">
+							<a href="<?= wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "full" )[0]; ?>" target="_blank"><div class="oferta-img" style="background-image: url(<?= wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "large" )[0]; ?>)" ></div></a>
+							<h2><?= get_the_title() ?></h2>
 							<?= the_content() ?>
 							<h3><?= the_field('preu') ?></h3>
 						</div>

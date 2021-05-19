@@ -13,15 +13,28 @@ header {
 		}
 	}
 
+	.navbar-dark .navbar-toggler {
+	    color: hsla(0,0%,100%,.9);
+	    border-color: hsla(0,0%,100%,.9);
+	}
+
 	.navbar {
 		top: 0; /* Stay on top */
 		width: 100%; /* Full width */
 		transition: all .2s ease-in; /* Transition effect when sliding down (and up) */
 
+		.mini-logo {
+			display: block;
+		}
+
+		.mini-logo-inside {
+			display: flex;
+		}
+
 		.logo-nav {
-			max-width: 35px;
+			width: 35px;
 		    left: 20px;
-		    position: absolute;
+		    /*position: absolute;*/
 		    opacity: 0;
 		    transition: opacity .2s ease-in;
 		} 
@@ -32,10 +45,6 @@ header {
 
 		&.in {
 			background: $gris-fosc;
-
-			.navbar-collapse {
-				padding: 0 !important;
-			}
 
 			.logo-nav {
 			    opacity: 1;

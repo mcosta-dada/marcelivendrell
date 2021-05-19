@@ -34,7 +34,7 @@
 							<div class="slide-image d-flex justify-content-center align-items-center item" style="background-image: url(<?= get_sub_field('imatge_background') ?>)">
 								<div class="content-slide text-center mt-5 px-5">
 									<!--img class="logo-slide img-fluid animate__animated animate__fadeInLeft animate__delay-1s"  data-animation="animated flash" src="<?= get_sub_field('imatge') ?>" /-->
-									<img class="logo-slide img-fluid"  src="<?= get_sub_field('imatge') ?>" />
+									<img class="logo-slide img-fluid invisible"  src="<?= get_sub_field('imatge') ?>" />
 									<h2 class="text-slide text-white my-5" ><?= the_sub_field('text') ?></h2>
 								</div>
 							</div>
@@ -53,6 +53,7 @@
 
 					?>
 				</div>
+				<img class="logo-slide-fixed img-fluid" src="//localhost:3002/wp-content/uploads/2021/01/marcelli_logoblanc.png" style="">
 
 				
 			</div>

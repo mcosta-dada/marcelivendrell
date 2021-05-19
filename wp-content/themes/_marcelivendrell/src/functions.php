@@ -11,8 +11,9 @@ if ( ! function_exists( 'theme_setup' ) ) :
 
 		register_nav_menus(
 			array(
-				'header-menu' => __( 'Menú Principal', 'marcelivendrell' ),
-				'header-menu-mobile' => __( 'Menú Principal Mòbil', 'marcelivendrell' ),
+				'header-menu' => __( 'Menú Principal Centre', 'marcelivendrell' ),
+				'header-menu-mobile' => __( 'Menú Principal Centre Mòbil', 'marcelivendrell' ),
+				'header-menu-dreta' => __( 'Menú Principal Dreta', 'marcelivendrell' ),
 			)
 		);
 

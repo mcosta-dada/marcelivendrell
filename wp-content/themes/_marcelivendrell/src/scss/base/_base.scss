@@ -99,6 +99,22 @@ li {
 	background-position: center center;
 	min-height: 50vh;
 } 
+
+.logo-slide-fixed {
+    max-width: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding-bottom: 100px;
+}
+
+span.titol-input {
+    font-size: 1rem;
+}
+
 /*
 input, textarea {
 	max-width: 300px;
