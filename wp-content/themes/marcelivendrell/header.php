@@ -53,7 +53,7 @@
 
 					?>
 				</div>
-				<img class="logo-slide-fixed img-fluid" src="//localhost:3002/wp-content/uploads/2021/01/marcelli_logoblanc.png" style="">
+				<img class="logo-slide-fixed img-fluid" src="<?= get_stylesheet_directory_uri() ?>/img/header/marcelli_logoblanc.png" style="">
 
 				
 			</div>

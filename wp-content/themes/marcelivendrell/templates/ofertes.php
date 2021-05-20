@@ -55,23 +55,8 @@ get_header();
 		</section>
 
 
-		<section id="contacte" class="container-fluid dark-bg mt-5">
-
-			<div class="pb-5">
-				<h1 class="text-center wow animate__animated animate__fadeIn mb-5" data-wow-delay=".5s">CONTACTE</h1>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 info pt-4 wow animate__animated animate__fadeIn" data-wow-delay="1s">
-							<?= get_field('dades_contacte'); ?>
-						</div>
-						<div class="col-md-6 wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
-							<?= do_shortcode(get_field('formulari')); ?>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<?php get_template_part( 'template-parts/contacte' ); ?>
+		
 	</main>
 </div>
 

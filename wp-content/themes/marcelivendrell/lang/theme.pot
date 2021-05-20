@@ -14,9 +14,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/functions.php:14
-msgid "Menú Principal"
+msgid "Menú Principal Centre"
 msgstr ""
 
 #: src/functions.php:15
-msgid "Menú Principal Mòbil"
+msgid "Menú Principal Centre Mòbil"
+msgstr ""
+
+#: src/functions.php:16
+msgid "Menú Principal Dreta"
 msgstr ""

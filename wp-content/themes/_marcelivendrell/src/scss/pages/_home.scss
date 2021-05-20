@@ -78,27 +78,6 @@
 		}
 	} 
 
-	#contacte {
-
-		form {
-			p, label {
-				margin-bottom: 0;
-			} 
-
-			.wpcf7-submit {
-				/*border: 2px solid;*/
-				&:hover {
-					border: 2px solid white !important;
-					color: white;
-					background: #333333 !important;
-				}
-			}
-		} 
-		.info {
-			p {
-				font-size: 1rem;
-			}
-		}
-	} 
+	
 
 }

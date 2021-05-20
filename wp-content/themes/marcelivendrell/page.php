@@ -5,22 +5,19 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<div class="container mb-5" style="margin-top: 100px">
+				<?php
 
-			<?php
+				// Start the Loop.
+				while ( have_posts() ) :
+					the_post();
 
-			// Start the Loop.
-			while ( have_posts() ) :
-				the_post();
+					echo "<h1 class='mb-5'>". get_the_title() ."</h1>";
+					the_content();
 
-				get_template_part( 'template-parts/content/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
-
-			endwhile; // End the loop.
-			?>
+				endwhile; // End the loop.
+				?>
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

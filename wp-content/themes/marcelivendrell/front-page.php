@@ -85,7 +85,7 @@ get_header();
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h3 class="mb-5 wow animate__animated animate__fadeIn"><?= get_field('titol_marques') ?></h3>
+						<h3 class="mb-5 wow animate__animated animate__fadeIn text-center"><?= get_field('titol_marques') ?></h3>
 						<div class="marques d-md-flex justify-content-between align-items-center">
 							<?php
 
@@ -185,22 +185,7 @@ get_header();
 		</section>
 
 
-		<section id="contacte" class="container-fluid dark-bg pb-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<h1 class="wow animate__animated animate__fadeIn mb-5" data-wow-delay=".5s"><?= get_field('titol_contacte'); ?></h1>
-					</div>
-
-					<div class="col-md-5 info pt-4 wow animate__animated animate__fadeIn" data-wow-delay="1s">
-						<?= get_field('dades_contacte'); ?>
-					</div>
-					<div class="col-md-7 wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
-						<?= do_shortcode(get_field('formulari')); ?>
-					</div>
-				</div>
-			</div>
-		</section>
+		<?php get_template_part( 'template-parts/contacte' ); ?>
 
 	</main><!-- .site-main -->
 </div><!-- .content-area -->
